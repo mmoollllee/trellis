@@ -1,3 +1,29 @@
+# CUSTOM
+
+## UPDATE
+
+```sh
+$ git remote add trellis https://github.com/roots/trellis.git
+$ git fetch trellis master
+$ git merge --squash --allow-unrelated-histories --no-commit trellis/master
+$ git commit -m "Update trellis from trellis/master"
+```
+
+## INIT & UP Commands
+`trellis init && trellis up`
+
+## PHP Settings
+
+PHP Settings can be changed in `trellis/group_vars/development/php.yml`. See [this blog-post by Jasper Frumau](https://imwz.io/custom-php-settings-in-trellis/).
+
+```yml
+php_memory_limit: 256M
+php_post_max_size: 256M
+php_upload_max_filesize: 256M
+```
+
+# ORIGINAL
+
 <p align="center">
   <a href="https://roots.io/trellis/">
     <img alt="Trellis" src="https://cdn.roots.io/app/uploads/logo-trellis.svg" height="100">
