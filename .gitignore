@@ -4,7 +4,9 @@ vagrant.local.yml
 vendor/roles
 *.py[co]
 *.retry
-.trellis/virtualenv
+.trellis/*
+!.trellis/cli.yml
+trellis.cli.local.yml
 
 group_vars/*/vault.yml
 group_vars/*/wordpress_sites.yml
