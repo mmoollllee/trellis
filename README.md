@@ -1,5 +1,9 @@
 # CUSTOM
 
+## Update Group Vars & New Sites
+See [Re-Provisioning in Trellis docs](https://roots.io/trellis/docs/local-development/#re-provisioning)
+`trellis provision development` or `vagrant reload`
+
 ## UPDATE
 
 ```sh
