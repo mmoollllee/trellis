@@ -1,8 +1,16 @@
 # CUSTOM
 
+## Start VM
+`trellis vm start`
+
 ## Update Group Vars & New Sites
 See [Re-Provisioning in Trellis docs](https://roots.io/trellis/docs/local-development/#re-provisioning)
-`trellis provision development` or `vagrant reload`
+- `trellis vm stop`
+- `limactl edit <instance-name>`
+- add mountpoint to existing mountslist
+- save and do not confirm start vm (had port problems doing so)
+- `trellis vm start`
+- `trellis provision development`
 
 ## UPDATE
 
